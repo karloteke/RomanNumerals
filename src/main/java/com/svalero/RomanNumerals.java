@@ -8,6 +8,9 @@ public class RomanNumerals {
         if(decimal == 3){
             return "III";
         }
+        if(decimal == 4){
+            return "IV";
+        }
         return "I";
     }
 }
