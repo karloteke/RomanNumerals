@@ -2,9 +2,6 @@ package com.svalero;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static sun.nio.cs.Surrogate.is;
-
 public class RomanNumeralsTest {
     RomanNumerals romanNumerals = new RomanNumerals();
     @Test
