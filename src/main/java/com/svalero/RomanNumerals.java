@@ -11,6 +11,9 @@ public class RomanNumerals {
         if(decimal == 4){
             return "IV";
         }
+        if(decimal == 5){
+            return "V";
+        }
         return "I";
     }
 }
