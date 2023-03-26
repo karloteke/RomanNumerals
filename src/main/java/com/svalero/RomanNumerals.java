@@ -1,34 +1,20 @@
 package com.svalero;
 public class RomanNumerals {
+    public static String convertToRoman(int numero) {
+        if (numero < 1 || numero > 3000) {
+            //Excepción números comprendidos entre 1 y 3000
+            throw new IllegalArgumentException("El número debe estar entre 1 y 3000.");
+        }
+        String[] simbolos = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        int[] valores = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        StringBuilder romano = new StringBuilder();
 
-    public static String  convertToRoman(int decimal) {
-        if(decimal == 2){
-            return "II";
+        for (int i = 0; i < simbolos.length; i++) {
+            while (numero >= valores[i]) {
+                romano.append(simbolos[i]);
+                numero -= valores[i];
+            }
         }
-        if(decimal == 3){
-            return "III";
-        }
-        if(decimal == 4){
-            return "IV";
-        }
-        if(decimal == 5){
-            return "V";
-        }
-        if(decimal == 7){
-            return "VII";
-        }
-        if(decimal == 9){
-            return "IX";
-        }
-        if(decimal == 10){
-            return "X";
-        }
-        if(decimal == 18){
-            return "XVIII";
-        }
-        if(decimal == 30){
-            return "XXX";
-        }
-        return "I";
+        return romano.toString();
     }
 }
