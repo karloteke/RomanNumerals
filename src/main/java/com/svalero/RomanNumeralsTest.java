@@ -22,5 +22,7 @@ public class RomanNumeralsTest {
         Assert.assertTrue(resultNine.equals("IX"));
         String resultTen = this.romanNumerals.convertToRoman(10);
         Assert.assertTrue(resultTen.equals("X"));
+        String resultEighteen = this.romanNumerals.convertToRoman(18);
+        Assert.assertTrue(resultEighteen.equals("XVIII"));
     }
 }
