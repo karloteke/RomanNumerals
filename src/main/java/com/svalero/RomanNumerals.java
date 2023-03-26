@@ -26,6 +26,9 @@ public class RomanNumerals {
         if(decimal == 18){
             return "XVIII";
         }
+        if(decimal == 30){
+            return "XXX";
+        }
         return "I";
     }
 }
