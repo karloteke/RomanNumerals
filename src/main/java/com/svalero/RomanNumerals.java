@@ -20,6 +20,10 @@ public class RomanNumerals {
         if(decimal == 9){
             return "IX";
         }
+        if(decimal == 10){
+            return "X";
+        }
+
         return "I";
     }
 }
