@@ -17,6 +17,9 @@ public class RomanNumerals {
         if(decimal == 7){
             return "VII";
         }
+        if(decimal == 9){
+            return "IX";
+        }
         return "I";
     }
 }
