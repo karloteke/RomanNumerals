@@ -12,6 +12,8 @@ public class RomanNumeralsTest {
         Assert.assertTrue(resultTwo.equals("II"));
         String resultThree = this.romanNumerals.convertToRoman(3);
         Assert.assertTrue(resultThree.equals("III"));
+        String resultFour = this.romanNumerals.convertToRoman(4);
+        Assert.assertTrue(resultFour.equals("IV"));
 
     }
 }
