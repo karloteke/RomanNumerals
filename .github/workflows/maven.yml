@@ -31,6 +31,12 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Run Tests
       run: mvn test
+    - name: Lint Code Base
+      uses: github/super-linter/slim@v4
+      env:
+        VALIDATE_ALL_CODEBASE: true
+        DEFAULT_BRANCH: master
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
  
 
  
