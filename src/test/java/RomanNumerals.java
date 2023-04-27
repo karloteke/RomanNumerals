@@ -1,4 +1,3 @@
-package com.svalero;
 public class RomanNumerals {
     public static String convertToRoman(int numero) {
         if (numero < 1 || numero > 3000) {
