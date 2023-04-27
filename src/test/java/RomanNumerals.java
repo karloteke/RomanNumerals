@@ -1,4 +1,5 @@
 public class RomanNumerals {
+
     public static String convertToRoman(int numero) {
         if (numero < 1 || numero > 3000) {
             //Excepción números comprendidos entre 1 y 3000

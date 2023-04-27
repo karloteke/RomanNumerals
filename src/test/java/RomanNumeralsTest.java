@@ -1,7 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-
 public class RomanNumeralsTest {
     RomanNumerals romanNumerals = new RomanNumerals();
     @Test
