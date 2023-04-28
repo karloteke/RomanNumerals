@@ -42,15 +42,15 @@ public class RomanNumeralsTest {
      * Conversión numero 30.
      */
     private static final int THIRTY = 30;
+
     /**
      * Instancia de la clase RomanNumerals para realizar
      * pruebas de conversión a números romanos.
      */
-
-    RomanNumerals romanNumerals = new RomanNumerals();
+    private RomanNumerals romanNumerals = new RomanNumerals();
 
     /**
-     * Test de decimal a número romano.
+     * Test de conversión de números decimales a números romanos.
      */
     @Test
     public void testConvertToRoman() {

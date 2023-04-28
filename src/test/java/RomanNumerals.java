@@ -10,6 +10,10 @@ public final class RomanNumerals {
      */
     private static final int MAX_VALUE = 3000;
 
+    //Constructor privado para evitar la creación de instancias
+    private RomanNumerals() {
+    }
+
     /**
      * Convierte un número entero en número romano.
      *
