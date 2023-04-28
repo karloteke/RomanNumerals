@@ -47,7 +47,7 @@ public class RomanNumeralsTest {
      * Instancia de la clase RomanNumerals para realizar
      * pruebas de conversión a números romanos.
      */
-    private RomanNumerals romanNumerals = new RomanNumerals();
+    public RomanNumerals romanNumerals = new RomanNumerals();
 
     /**
      * Test de conversión de números decimales a números romanos.
