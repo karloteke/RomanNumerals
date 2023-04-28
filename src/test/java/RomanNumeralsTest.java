@@ -59,8 +59,10 @@ public class RomanNumeralsTest {
     private RomanNumerals romanNumerals;
 
     /**
-     * Establece la instancia de RomanNumerals que será utilizada por esta clase de prueba.
-     * Las subclases pueden anular este método para proporcionar una implementación personalizada.
+     * Establece la instancia de RomanNumerals que
+     * será utilizada por esta clase de prueba.
+     * Las subclases pueden anular este método
+     * para proporcionar una implementación personalizada.
      * @param romanNums la instancia de RomanNumerals que será utilizada.
      */
     public void setRomanNumerals(final RomanNumerals romanNums) {
@@ -68,8 +70,10 @@ public class RomanNumeralsTest {
     }
 
     /**
-     * Devuelve la instancia de RomanNumerals utilizada por esta clase de prueba.
-     * Las subclases pueden anular este método para proporcionar una implementación personalizada.
+     * Devuelve la instancia de RomanNumerals
+     * utilizada por esta clase de prueba.
+     * Las subclases pueden anular este método
+     * para proporcionar una implementación personalizada.
      * @return la instancia de RomanNumerals utilizada por esta clase de prueba.
      */
     public RomanNumerals getRomanNumerals() {
