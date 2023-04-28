@@ -12,6 +12,9 @@ public final class RomanNumerals {
 
     /**
      * Convierte un número entero en número romano.
+     *
+     * @param number El número entero a convertir.
+     * @return El número romano equivalente.
      */
     public static String convertToRoman(final int number) {
         if (number < MIN_VALUE || number > MAX_VALUE) {

@@ -43,33 +43,36 @@ public class RomanNumeralsTest {
      */
     private static final int THIRTY = 30;
     /**
-     * Instancia de la clase RomanNumerals para realizar pruebas de conversión a números romanos
+     * Instancia de la clase RomanNumerals para realizar
+     * pruebas de conversión a números romanos.
      */
-    private final RomanNumerals romanNumerals = new RomanNumerals();
+
+    RomanNumerals romanNumerals = new RomanNumerals();
+
     /**
-     * Test de decimal a número romano
+     * Test de decimal a número romano.
      */
     @Test
     public void testConvertToRoman() {
         String resultOne = romanNumerals.convertToRoman(ONE);
-        Assert.assertTrue(resultOne.equals("I"));
+        Assert.assertEquals("I", resultOne);
         String resultTwo = romanNumerals.convertToRoman(TWO);
-        Assert.assertTrue(resultTwo.equals("II"));
+        Assert.assertEquals("II", resultTwo);
         String resultThree = romanNumerals.convertToRoman(THREE);
-        Assert.assertTrue(resultThree.equals("III"));
+        Assert.assertEquals("III", resultThree);
         String resultFour = romanNumerals.convertToRoman(FOUR);
-        Assert.assertTrue(resultFour.equals("IV"));
+        Assert.assertEquals("IV", resultFour);
         String resultFive = romanNumerals.convertToRoman(FIVE);
-        Assert.assertTrue(resultFive.equals("V"));
+        Assert.assertEquals("V", resultFive);
         String resultSeven = romanNumerals.convertToRoman(SEVEN);
-        Assert.assertTrue(resultSeven.equals("VII"));
+        Assert.assertEquals("VII", resultSeven);
         String resultNine = romanNumerals.convertToRoman(NINE);
-        Assert.assertTrue(resultNine.equals("IX"));
+        Assert.assertEquals("IX", resultNine);
         String resultTen = romanNumerals.convertToRoman(TEN);
-        Assert.assertTrue(resultTen.equals("X"));
+        Assert.assertEquals("X", resultTen);
         String resultEighteen = romanNumerals.convertToRoman(EIGHTEEN);
-        Assert.assertTrue(resultEighteen.equals("XVIII"));
+        Assert.assertEquals("XVIII", resultEighteen);
         String resultThirty = romanNumerals.convertToRoman(THIRTY);
-        Assert.assertTrue(resultThirty.equals("XXX"));
+        Assert.assertEquals("XXX", resultThirty);
     }
 }
