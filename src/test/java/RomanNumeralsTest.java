@@ -42,9 +42,13 @@ public class RomanNumeralsTest {
      * Conversión numero 30.
      */
     private static final int THIRTY = 30;
-
+    /**
+     * Instancia de la clase RomanNumerals para realizar pruebas de conversión a números romanos
+     */
     private final RomanNumerals romanNumerals = new RomanNumerals();
-
+    /**
+     * Test de decimal a número romano
+     */
     @Test
     public void testConvertToRoman() {
         String resultOne = romanNumerals.convertToRoman(ONE);
