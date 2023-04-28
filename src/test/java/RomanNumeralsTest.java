@@ -2,28 +2,40 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RomanNumeralsTest {
-    RomanNumerals romanNumerals = new RomanNumerals();
+    private static final int ONE = 1;
+    private static final int TWO = 2;
+    private static final int THREE = 3;
+    private static final int FOUR = 4;
+    private static final int FIVE = 5;
+    private static final int SEVEN = 7;
+    private static final int NINE = 9;
+    private static final int TEN = 10;
+    private static final int EIGHTEEN = 18;
+    private static final int THIRTY = 30;
+
+    private final RomanNumerals romanNumerals = new RomanNumerals();
+
     @Test
-    public void test_convert_to_roman() {
-        String resultOne = this.romanNumerals.convertToRoman(1);
+    public void testConvertToRoman() {
+        String resultOne = romanNumerals.convertToRoman(ONE);
         Assert.assertTrue(resultOne.equals("I"));
-        String resultTwo = this.romanNumerals.convertToRoman(2);
+        String resultTwo = romanNumerals.convertToRoman(TWO);
         Assert.assertTrue(resultTwo.equals("II"));
-        String resultThree = this.romanNumerals.convertToRoman(3);
+        String resultThree = romanNumerals.convertToRoman(THREE);
         Assert.assertTrue(resultThree.equals("III"));
-        String resultFour = this.romanNumerals.convertToRoman(4);
+        String resultFour = romanNumerals.convertToRoman(FOUR);
         Assert.assertTrue(resultFour.equals("IV"));
-        String resultFive = this.romanNumerals.convertToRoman(5);
+        String resultFive = romanNumerals.convertToRoman(FIVE);
         Assert.assertTrue(resultFive.equals("V"));
-        String resultSeven = this.romanNumerals.convertToRoman(7);
+        String resultSeven = romanNumerals.convertToRoman(SEVEN);
         Assert.assertTrue(resultSeven.equals("VII"));
-        String resultNine = this.romanNumerals.convertToRoman(9);
+        String resultNine = romanNumerals.convertToRoman(NINE);
         Assert.assertTrue(resultNine.equals("IX"));
-        String resultTen = this.romanNumerals.convertToRoman(10);
+        String resultTen = romanNumerals.convertToRoman(TEN);
         Assert.assertTrue(resultTen.equals("X"));
-        String resultEighteen = this.romanNumerals.convertToRoman(18);
+        String resultEighteen = romanNumerals.convertToRoman(EIGHTEEN);
         Assert.assertTrue(resultEighteen.equals("XVIII"));
-        String resultThirty = this.romanNumerals.convertToRoman(30);
+        String resultThirty = romanNumerals.convertToRoman(THIRTY);
         Assert.assertTrue(resultThirty.equals("XXX"));
     }
 }
