@@ -58,10 +58,20 @@ public class RomanNumeralsTest {
      */
     private RomanNumerals romanNumerals;
 
-    public void setRomanNumerals(RomanNumerals romanNumerals) {
-        this.romanNumerals = romanNumerals;
+    /**
+     * Establece la instancia de RomanNumerals que será utilizada por esta clase de prueba.
+     * Las subclases pueden anular este método para proporcionar una implementación personalizada.
+     * @param romanNums la instancia de RomanNumerals que será utilizada.
+     */
+    public void setRomanNumerals(final RomanNumerals romanNums) {
+        this.romanNumerals = romanNums;
     }
 
+    /**
+     * Devuelve la instancia de RomanNumerals utilizada por esta clase de prueba.
+     * Las subclases pueden anular este método para proporcionar una implementación personalizada.
+     * @return la instancia de RomanNumerals utilizada por esta clase de prueba.
+     */
     public RomanNumerals getRomanNumerals() {
         return romanNumerals;
     }
