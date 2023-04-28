@@ -10,8 +10,9 @@ public final class RomanNumerals {
      */
     private static final int MAX_VALUE = 3000;
 
-    //Constructor privado para evitar la creación de instancias
-    public RomanNumerals() {
+    // Constructor privado para evitar la creación de instancias
+    private RomanNumerals() {
+        throw new AssertionError();
     }
 
     /**
